@@ -31,3 +31,8 @@ User Stories
   user can see weather for that day as well
   user can see chart of most played songs
   
+
+Todos:
+- [ ] Plan a layout
+- [ ] Make some mock data
+- [ ] Create Journal Entry component
