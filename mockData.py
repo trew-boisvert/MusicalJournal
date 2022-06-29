@@ -12,7 +12,7 @@ chapter: {
 """
 
 
-kat_chapter = { "title": "Spring Clean the New Home",
+kats_chapter = { "title": "Spring Clean the New Home",
                 "image": "https://www.gardendesign.com/pictures/images/675x529Max/site_3/helianthus-yellow-flower-pixabay_11863.jpg",
                 "playlist": "id string goes here", 
                 "entries": [

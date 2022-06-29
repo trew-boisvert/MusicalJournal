@@ -33,6 +33,6 @@ User Stories
   
 
 Todos:
-- [ ] Plan a layout
+- [x] Plan a layout
 - [ ] Make some mock data
 - [ ] Create Journal Entry component
