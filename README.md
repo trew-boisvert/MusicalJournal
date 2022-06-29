@@ -34,5 +34,17 @@ User Stories
 
 Todos:
 - [x] Plan a layout
-- [ ] Make some mock data
+- [x] Make some mock data
+- [ ] Create Table of Contents Component
 - [ ] Create Journal Entry component
+
+
+Book
+  Pages
+    Table of Contents
+      Chapters
+        Entries
+    Menu
+      Menu Items
+Cover
+  Login
