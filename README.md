@@ -35,7 +35,8 @@ User Stories
 Todos:
 - [x] Plan a layout
 - [x] Make some mock data
-- [ ] Create Table of Contents Component
+- [x] Create Table of Contents Component
+  - [x] Cool color changing entries
 - [ ] Create Journal Entry component
 
 
@@ -48,3 +49,6 @@ Book
       Menu Items
 Cover
   Login
+
+
+  <!-- Co-authored-by: Katrina Huber-Juma <katrina.huber@gmail.com> -->

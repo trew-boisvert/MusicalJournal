@@ -38,12 +38,12 @@ trews_chapter = {"title": "Pride",
                     {
                         "title": "Trans March",
                         "body": "Root bought me a cute hat and gave me a unicorn patch to sew onto my bag.",
-                        "images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYTHz_m9fOQaA0EKYl7R5D9uEPvtNsJlLDFUAEVIwAvnDBExBJOQ_4mrJCiyrTwiZvxJU&usqp=CAU",
+                        "images": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYTHz_m9fOQaA0EKYl7R5D9uEPvtNsJlLDFUAEVIwAvnDBExBJOQ_4mrJCiyrTwiZvxJU&usqp=CAU"],
                         "date": "date time thingy"
                     },     {
                         "title": "Sunday Pride",
                         "body": "So many people, so drunk, so rowdy, I just want breakfast.",
-                        "images": "https://static01.nyt.com/images/2019/06/08/world/08warsaw-pride2/08warsaw-pride2-videoSixteenByNineJumbo1600.jpg",
+                        "images": ["https://static01.nyt.com/images/2019/06/08/world/08warsaw-pride2/08warsaw-pride2-videoSixteenByNineJumbo1600.jpg"],
                         "date": "another date"
                     }
                 ]}
