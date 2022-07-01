@@ -1,8 +1,16 @@
 // alert("woot")
+// onMouseEnter
+// onMouseLeave
+
 function Content({content}){
+    const alertClick = ()=>{alert("woah, such click")}
 
-    const entriesList = content.entries.map((entry)=>{return <li>{entry.title}</li>})
+    const entriesList = content.entries.map((entry)=>{return <li onClick={alertClick} onMouseEnter={changeBackground} onMouseLeave={changeBackground} >{entry.title}</li>})
 
+    function changeBackground(evt){
+        const el = evt.target;
+        el.style.background = el.style.background ==='yellow'? el.style.background = "white": el.style.background = "yellow";
+    }
 
     return <li key={content.title}>{content.title}<ul>{entriesList}</ul></li>
 }
