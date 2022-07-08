@@ -12,6 +12,7 @@
 // } from "react-router-dom";
 const Router = ReactRouterDOM.BrowserRouter;
 const {Link, Switch, Route} = ReactRouterDOM;
+// console.log(ReactRouterDOM.BrowserRouter)
 
 // function JournalEntry(props){ // entries
 //     const [entryVisible, setEntryVisible] = React.useState(false);
@@ -56,6 +57,14 @@ function TableOfContents(){
     return <ul>{listItems}</ul>
 }
 
+function Login(){
+    return (<h1>LOGIN</h1>)
+}
+
+
+function Logout(){
+    return (<h1>avaunt!!!</h1>)
+}
 function App(props) {
     return (<Router>
                 <div>
@@ -74,14 +83,16 @@ function App(props) {
                     </nav>
 
                     <Switch>
-                        <Route path="/">
+                        {/* adding exact on this route is the difference between sadness and success 
+                        (switch working vs not working) */}
+                        <Route exact path="/">
                             <TableOfContents />
                         </Route>
                         <Route path="/login">
-                            <h1>Log In!!!!</h1>
+                            <Login />
                         </Route>
                         <Route path="/logout">
-                            <h1>Leave!!!</h1>
+                            <Logout />
                         </Route>
                     </Switch>
                 </div>
@@ -99,5 +110,6 @@ render that array
 */
 
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App/>)
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(<App/>)
+ReactDOM.render(<App/>, document.getElementById("root"));
