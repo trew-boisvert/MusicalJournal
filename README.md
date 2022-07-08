@@ -37,8 +37,10 @@ Todos:
 - [x] Make some mock data
 - [x] Create Table of Contents Component
   - [x] Cool color changing entries
-- [ ] Create Journal Entry component
-
+- [ ] Create Journal Entry component *NEXT*
+- [ ] Expand Login component
+- [ ] Expand Logout component
+- [ ] Put components in separate files
 
 Book
   Pages
