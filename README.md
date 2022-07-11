@@ -39,6 +39,7 @@ Todos:
   - [x] Cool color changing entries
 - [ ] Create Journal Entry component *NEXT*
 - [ ] Expand Login component
+  - [ ] Add OAuth
 - [ ] Expand Logout component
 - [ ] Put components in separate files
 

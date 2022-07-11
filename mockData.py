@@ -2,7 +2,7 @@
 chapter: {
     title:
     image: 
-    playlist: link to spotifiy/apple music playlist id
+    playlist: link to spotify/apple music playlist id
     entries : [
         {title: 
         body:

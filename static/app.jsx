@@ -21,41 +21,10 @@ const {Link, Switch, Route} = ReactRouterDOM;
 
 // }
 
-function Content({content}){
-
-    const alertClick = ()=>{alert("woah, such click")}
-
-    const entriesList = content.entries.map((entry)=>{return <li 
-                                                        onClick={alertClick} 
-                                                        onMouseEnter={changeBackground} 
-                                                        onMouseLeave={changeBackground} >{entry.title}
-                                                    </li>})
-
-    function changeBackground(evt){
-        const elStyle = evt.target.style;
-        elStyle.background = elStyle.background ==='yellow'? elStyle.background = "white": elStyle.background = "yellow";
-    }
-
-    return <li key={content.title}>{content.title}<ul>{entriesList}</ul></li>
-}
 
 
-function TableOfContents(){
-    const [ contents, setContents] = React.useState([]);
 
-    React.useEffect(()=>{
-        fetch('/table-of-contents.json')
-            .then(response=>response.json())
-            .then(result => setContents(result))
-    }, [])
 
-    const listItems = [];
-
-    for (const content of contents){
-        listItems.push(<Content content={content}/>)
-    }
-    return <ul>{listItems}</ul>
-}
 
 function Login(){
     return (<h1>LOGIN</h1>)
@@ -81,7 +50,7 @@ function App(props) {
                             </li>
                         </ul>
                     </nav>
-
+                    <Entry />
                     <Switch>
                         {/* adding exact on this route is the difference between sadness and success 
                         (switch working vs not working) */}
