@@ -50,7 +50,7 @@ function App(props) {
                             </li>
                         </ul>
                     </nav>
-                    <Entry />
+            
                     <Switch>
                         {/* adding exact on this route is the difference between sadness and success 
                         (switch working vs not working) */}

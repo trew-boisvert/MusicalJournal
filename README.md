@@ -42,6 +42,8 @@ Todos:
   - [ ] Add OAuth
 - [ ] Expand Logout component
 - [ ] Put components in separate files
+- [ ] DON'T FORGET to fix keys TODO
+- [ ] make pages component, move showEntry definition onto App, pageView state TODO
 
 Book
   Pages
