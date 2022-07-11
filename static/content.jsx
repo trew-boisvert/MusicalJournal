@@ -1,12 +1,12 @@
-function Content({content}){
-
-    const alertClick = ()=>{alert("woah, such click")}
+function Content({content, handleClick}){
+//this use of curly brackets ^ is to destructure from the props object
+    
 
     const entriesList = content.entries.map((entry)=>{return <li 
-                                                        onClick={alertClick} 
-                                                        onMouseEnter={changeBackground} 
-                                                        onMouseLeave={changeBackground} >{entry.title}
-                                                    </li>})
+                                onClick={handleClick} 
+                                onMouseEnter={changeBackground} 
+                                onMouseLeave={changeBackground} >{entry.title}
+                            </li>})
 
     function changeBackground(evt){
         const elStyle = evt.target.style;

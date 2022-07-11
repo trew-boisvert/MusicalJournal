@@ -6,11 +6,13 @@ function TableOfContents(){
             .then(response=>response.json())
             .then(result => setContents(result))
     }, [])
+    
+    const alertClick = ()=>{alert("woah, such click")}
 
     const listItems = [];
 
     for (const content of contents){
-        listItems.push(<Content content={content}/>)
+        listItems.push(<Content content={content} handleClick={alertClick}/>)
     }
     return <ul>{listItems}</ul>
 }
