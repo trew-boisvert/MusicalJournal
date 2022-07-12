@@ -11,18 +11,20 @@ function Content({content, getEntry}){
                         getEntry(entry)
                     }
                     return (<li
+                    className="entry-title"
                     key={entry.title}
                     onClick={handleClick} 
-                    onMouseEnter={changeBackground} 
-                    onMouseLeave={changeBackground} >{entry.title}
+                    /*onMouseEnter={changeBackground} 
+                    onMouseLeave={changeBackground} */
+                    >{entry.title}
                     </li>)})
 
-    function changeBackground(evt){
-        const elStyle = evt.target.style;
-        elStyle.background = elStyle.background ==='yellow'? elStyle.background = "white": elStyle.background = "yellow";
-    }
+    // function changeBackground(evt){
+    //     const elStyle = evt.target.style;
+    //     elStyle.background = elStyle.background ==='yellow'? elStyle.background = "white": elStyle.background = "yellow";
+    // }
 
-    return <li key={content.title}>{content.title}<ul>{entriesList}</ul></li>
+    return <li key={content.title} >{content.title}<ul>{entriesList}</ul></li>
 }
 
 /*[str1, str2, str3]
