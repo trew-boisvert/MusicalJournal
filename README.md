@@ -37,13 +37,15 @@ Todos:
 - [x] Make some mock data
 - [x] Create Table of Contents Component
   - [x] Cool color changing entries
-- [ ] Create Journal Entry component *NEXT*
+- [x] Create Journal Entry component *NEXT*
 - [ ] Expand Login component
+  - [ ] Style component
   - [ ] Add OAuth
 - [ ] Expand Logout component
-- [ ] Put components in separate files
+- [X] Put components in separate files
 - [ ] DON'T FORGET to fix keys TODO
-- [ ] make pages component, move showEntry definition onto App, pageView state TODO
+- [ ] make pages component, move showEntry definition onto App, pageView state TODo
+
 
 Book
   Pages
