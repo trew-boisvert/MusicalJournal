@@ -38,15 +38,20 @@ Todos:
 - [x] Create Table of Contents Component
   - [x] Cool color changing entries
 - [x] Create Journal Entry component 
+- [X] Put components in separate files
+- [x] make pages component, move showEntry definition onto App, pageView state *NEXT*
 - [ ] Expand Login component
   - [x] Style component
   - [ ] Add OAuth
-- [ ] Change Logout component to button in nav menu (only visible when logged in)
-- [X] Put components in separate files
+  - [ ] Make entries page show something else when viewing Login
+- [ ] Change Logout component to button in nav menu 
+  - [ ] Only visible when logged in
+  - [ ] Actually logs user out
 - [ ] DON'T FORGET to fix keys TODO
-- [ ] make pages component, move showEntry definition onto App, pageView state *NEXT*
-
-
+- [ ] Style Nav OffCanvas
+- [ ] Data Model
+  - [ ]Discuss Data Model
+  - [ ]Create model.py
 Book
   Pages
     Table of Contents
