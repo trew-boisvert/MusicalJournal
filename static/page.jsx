@@ -1,5 +1,5 @@
 function Page(props){
-    return (<div className="page">
+    return (<ReactBootstrap.Col className="page">
                 {props.children}
-            </div>)
+            </ReactBootstrap.Col>)
 }

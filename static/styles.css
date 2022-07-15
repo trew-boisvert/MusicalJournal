@@ -14,7 +14,8 @@ $old-burgundy: #3d2c2eff;
 */
 .page {
     background-color: #ffeeddff;
-    border: 1px solid #77b28cff
+    border: 1px solid #77b28cff;
+    height:95vh;
 }
 
 .btn-primary {

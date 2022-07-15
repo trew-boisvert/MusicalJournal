@@ -14,13 +14,6 @@ function App(props) {
 
     return (<Router>
                  <ReactBootstrap.Container fluid>
-                    <ReactBootstrap.Row>
-                        <ReactBootstrap.Col>
-                            <ReactBootstrap.Button variant="primary" onClick={handleShowNav}>
-                                Reveal Navigation
-                            </ReactBootstrap.Button>
-                        </ReactBootstrap.Col>
-                    </ReactBootstrap.Row>
                     
                     <ReactBootstrap.Offcanvas show={showNav} onHide={handleCloseNav}>
                         <ReactBootstrap.Offcanvas.Header closeButton >
@@ -41,26 +34,34 @@ function App(props) {
                         </ReactBootstrap.Offcanvas.Body>
                         
                     </ReactBootstrap.Offcanvas>
-                    <Page>
-                        <Switch>
-                            {/* adding exact on this route is the difference between sadness and success 
-                            (switch working vs not working) */}
-                            <Route exact path="/">
-                                <TableOfContents />
-                            </Route>
-                            <Route path="/login">
-                            
-                                    <ReactBootstrap.Row className="justify-content-md-center">
-                                        <ReactBootstrap.Col md="auto" ><Login /></ReactBootstrap.Col>
-                                    </ReactBootstrap.Row>
+                    <Book>
+                        <Page>
+                            <ReactBootstrap.Button variant="primary" onClick={handleShowNav}>
+                                Reveal Navigation
+                            </ReactBootstrap.Button>
+                            <Switch>
+                                {/* adding exact on this route is the difference between sadness and success 
+                                (switch working vs not working) */}
+                                <Route exact path="/">
+                                    <TableOfContents />
+                                </Route>
+                                <Route path="/login">
                                 
-                                
-                            </Route>
-                            <Route path="/logout">
-                                <Logout />
-                            </Route>
-                        </Switch>
-                    </Page>
+                                        <ReactBootstrap.Row className="justify-content-md-center">
+                                            <ReactBootstrap.Col md="auto" ><Login /></ReactBootstrap.Col>
+                                        </ReactBootstrap.Row>
+                                    
+                                    
+                                </Route>
+                                <Route path="/logout">
+                                    <Logout />
+                                </Route>
+                            </Switch>
+                        </Page>
+                        <Page>
+                            <h1>right page right here, write on me!</h1>
+                        </Page>
+                    </Book>
                     </ReactBootstrap.Container>
             </Router>)
 }
