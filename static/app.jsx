@@ -34,34 +34,7 @@ function App(props) {
                         </ReactBootstrap.Offcanvas.Body>
                         
                     </ReactBootstrap.Offcanvas>
-                    <Book>
-                        <Page>
-                            <ReactBootstrap.Button variant="primary" onClick={handleShowNav}>
-                                Reveal Navigation
-                            </ReactBootstrap.Button>
-                            <Switch>
-                                {/* adding exact on this route is the difference between sadness and success 
-                                (switch working vs not working) */}
-                                <Route exact path="/">
-                                    <TableOfContents />
-                                </Route>
-                                <Route path="/login">
-                                
-                                        <ReactBootstrap.Row className="justify-content-md-center">
-                                            <ReactBootstrap.Col md="auto" ><Login /></ReactBootstrap.Col>
-                                        </ReactBootstrap.Row>
-                                    
-                                    
-                                </Route>
-                                <Route path="/logout">
-                                    <Logout />
-                                </Route>
-                            </Switch>
-                        </Page>
-                        <Page>
-                            <h1>right page right here, write on me!</h1>
-                        </Page>
-                    </Book>
+                    <Book handleShowNav={handleShowNav} />
                     </ReactBootstrap.Container>
             </Router>)
 }
