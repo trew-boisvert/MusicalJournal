@@ -25,9 +25,6 @@ function Book(props){
                   
                   
               </Route>
-              <Route path="/logout">
-                  <Logout />
-              </Route>
           </Switch>
       </Page>
         <Page>

@@ -3,9 +3,6 @@ const Router = ReactRouterDOM.BrowserRouter;
 const {Link, Switch, Route} = ReactRouterDOM;
 
 
-function Logout(){
-    return (<h1>avaunt!!!</h1>)
-}
 function App(props) {
     const [showNav, setShowNav] = React.useState(false);
 
@@ -27,9 +24,9 @@ function App(props) {
                                 <li>
                                     <Link to="/login">Login</Link>
                                 </li>
-                                <li>
-                                    <Link to="/logout">Log Out</Link>
-                                </li>
+                                
+                                    <ReactBootstrap.Button>LogOut</ReactBootstrap.Button>
+                                
                             </ul>
                         </ReactBootstrap.Offcanvas.Body>
                         
