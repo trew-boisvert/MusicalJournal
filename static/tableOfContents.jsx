@@ -1,6 +1,6 @@
 function TableOfContents(){
     const [ contents, setContents] = React.useState([]);
-    const [ pageDisplay, setPageDisplay ] = React.useState("test");
+    const [ pageDisplay, setPageDisplay ] = React.useState("");
 
     React.useEffect(()=>{
         fetch('/table-of-contents.json')

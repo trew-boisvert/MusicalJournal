@@ -2,33 +2,6 @@
 const Router = ReactRouterDOM.BrowserRouter;
 const {Link, Switch, Route} = ReactRouterDOM;
 
-function Login(){
-    return (<ReactBootstrap.Card className="login-card">
-                <ReactBootstrap.Card.Header>
-                    This Book Belongs To:
-                </ReactBootstrap.Card.Header>
-                <ReactBootstrap.Card.Body>
-                    <form>
-                        <ReactBootstrap.Card.Text>
-                            <label htmlFor="email">Email: </label>
-                        </ReactBootstrap.Card.Text>
-                        <ReactBootstrap.Card.Text>
-                            <input type="email" name="email"></input>
-                        </ReactBootstrap.Card.Text>
-                        <ReactBootstrap.Card.Text>
-                            <label htmlFor="password">Password:</label>
-                        </ReactBootstrap.Card.Text>
-                        <ReactBootstrap.Card.Text>
-                            <input type="password" name="password"></input>
-                        </ReactBootstrap.Card.Text>
-                        <ReactBootstrap.Card.Text>
-                            <input type="submit"/>
-                        </ReactBootstrap.Card.Text>
-                    </form>
-                </ReactBootstrap.Card.Body>
-        </ReactBootstrap.Card>)
-}
-
 
 function Logout(){
     return (<h1>avaunt!!!</h1>)
@@ -68,25 +41,26 @@ function App(props) {
                         </ReactBootstrap.Offcanvas.Body>
                         
                     </ReactBootstrap.Offcanvas>
-            
-                    <Switch>
-                        {/* adding exact on this route is the difference between sadness and success 
-                        (switch working vs not working) */}
-                        <Route exact path="/">
-                            <TableOfContents />
-                        </Route>
-                        <Route path="/login">
-                           
-                                <ReactBootstrap.Row className="justify-content-md-center">
-                                    <ReactBootstrap.Col md="auto" ><Login /></ReactBootstrap.Col>
-                                </ReactBootstrap.Row>
+                    <Page>
+                        <Switch>
+                            {/* adding exact on this route is the difference between sadness and success 
+                            (switch working vs not working) */}
+                            <Route exact path="/">
+                                <TableOfContents />
+                            </Route>
+                            <Route path="/login">
                             
-                            
-                        </Route>
-                        <Route path="/logout">
-                            <Logout />
-                        </Route>
-                    </Switch>
+                                    <ReactBootstrap.Row className="justify-content-md-center">
+                                        <ReactBootstrap.Col md="auto" ><Login /></ReactBootstrap.Col>
+                                    </ReactBootstrap.Row>
+                                
+                                
+                            </Route>
+                            <Route path="/logout">
+                                <Logout />
+                            </Route>
+                        </Switch>
+                    </Page>
                     </ReactBootstrap.Container>
             </Router>)
 }
