@@ -1,6 +1,11 @@
 body {
     background-color: #3d2c2eff;
     color: #3d2c2eff;
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+
+h1 {
+    font-family: 'Alice', serif; 
 }
 
 /*
@@ -11,7 +16,28 @@ $dark-sea-green: #77b28cff;
 $antique-white: #ffeeddff;
 $old-burgundy: #3d2c2eff;
 
+font-family: 'Alice', serif;   --typewriter-looking
+font-family: 'Annie Use Your Telescope', cursive; ---cheeky error messages
+font-family: 'Eczar', serif;
+font-family: 'Edu SA Beginner', cursive; --okay, reasonably cute
+font-family: 'Handlee', cursive; --okay, more handwrite-y
+font-family: 'Kalam', cursive; --good, actually
+font-family: 'Permanent Marker', cursive;
+font-family: 'Sacramento', cursive;
+font-family: 'Share Tech Mono', monospace;
+font-family: 'Zen Antique Soft', serif;
+
+
 */
+a {
+    color:#ffeeddff;
+}
+
+.offcanvas {
+    background-color: #157a6eff;
+    color: #ffeeddff;
+}
+
 .page {
     background-color: #ffeeddff;
     border: 1px solid #77b28cff;
