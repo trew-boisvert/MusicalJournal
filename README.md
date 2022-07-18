@@ -50,6 +50,7 @@ Todos:
 - [ ] DON'T FORGET to fix keys TODO
 - [ ] Style Nav OffCanvas
 - [ ] Data Model
+  - [ ]Test seed file
   - [ ]Discuss Data Model
   - [ ]Create model.py
 - [ ] Create mock data that is also journal of progress (using commemorative photos)
