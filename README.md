@@ -52,6 +52,7 @@ Todos:
 - [ ] Data Model
   - [ ]Discuss Data Model
   - [ ]Create model.py
+- [ ] Create mock data that is also journal of progress (using commemorative photos)
 Book
   Pages
     Table of Contents
