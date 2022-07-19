@@ -48,12 +48,16 @@ Todos:
   - [ ] Only visible when logged in
   - [ ] Actually logs user out
 - [ ] DON'T FORGET to fix keys TODO
-- [ ] Style Nav OffCanvas
+- [x] Style Nav OffCanvas
 - [ ] Data Model
   - [ ]Test seed file
-  - [ ]Discuss Data Model
-  - [ ]Create model.py
-- [ ] Create mock data that is also journal of progress (using commemorative photos)
+  - [x] Add image table
+  - [x] Discuss Data Model
+  - [x] Create model.py
+  - [ ]Add methods to dictionary-ify results to be JSON-ified
+- [ ] Create mock data that is also journal of progress (using commemorative photos
+- [ ] Create to_dict mixin for model?
+
 Book
   Pages
     Table of Contents

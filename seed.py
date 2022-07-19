@@ -16,7 +16,7 @@ db.create_all()
 
 
 
-baby = User(user_email='baby@baby.com', user_password='screamallday')
+baby = User(email='baby@baby.com', password='screamallday')
 baby.chapters.append(Chapter(title="Launchtime", playlist="snackradio", cover_image="asmr of people crunching"))
 
 
@@ -26,6 +26,8 @@ c = Chapter(title="Low Energy Data Modeling Monday Mornin'", user_id=1, playlist
 
 combo = Entry(user=baby, chapter=c, body="dodododoododododo baby shark", title="jaws")
 
-db.session.add_all([baby, c])
+combo.images.append(Image(image="picture url, for reals"))
+
+db.session.add_all([baby, c, combo])
 
 db.session.commit()
