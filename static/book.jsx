@@ -28,7 +28,7 @@ function Book(props){
           </Switch>
       </Page>
         <Page>
-          <h1>Right Page right Here, Write on me! Great Words with Lovely Yummy </h1>
+          <h1>Right Page right Here, Write on me! Great Words with Lovely Yummy Thoughts</h1>
           <div>{pageDisplay}</div>
       </Page>
     </ReactBootstrap.Row>
