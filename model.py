@@ -18,7 +18,22 @@ class User(db.Model):
     chapters = db.relationship('Chapter', back_populates='user')
     entries = db.relationship('Entry', back_populates='user')
 
+
+    @classmethod
+    def create(cls, email, password):
+        """Create and return a new user."""
+        
+        return cls(email=email, password=password)
+
+
+    def __repr__(self):
+        """Represents object in a prettier way"""
+
+        return f"<User user_id={self.user_id} email={self.email}>"
+       
+
     def to_dict(self):
+        """Covert object to dictionary"""
         return { "user_id": self.user_id, 
                  "email": self.user_email, 
                  "password": self.user_password
