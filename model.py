@@ -25,6 +25,13 @@ class User(db.Model):
         
         return cls(email=email, password=password)
 
+    @classmethod
+    def get_by_email(cls, email):
+        """Find a user by their email address for the purpose of login"""
+
+        return cls.query.filter(User.email == email).first()
+
+
 
     def __repr__(self):
         """Represents object in a prettier way"""
