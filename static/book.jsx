@@ -1,7 +1,15 @@
+// How does this code look?  Is there too much happening here?
+
+// How do we choose between using props vs composition? 
+          // I'm especially anxious about having these switch statements 
+          // in a separate file from the router component
+
+// what else should we probably be doing differently?
+
 function Book(props){
     const [ pageDisplay, setPageDisplay ] = React.useState("");
     
-    const alertClick = (entry)=>{
+    const showEntry = (entry)=>{
        
         setPageDisplay(<Entry entry={entry}/>)
       }
@@ -15,7 +23,7 @@ function Book(props){
               {/* adding exact on this route is the difference between sadness and success 
               (switch working vs not working) */}
               <Route exact path="/">
-                  <TableOfContents handleShowEntry={alertClick}/>
+                  <TableOfContents handleShowEntry={showEntry}/>
               </Route>
               <Route path="/login">
               
