@@ -39,24 +39,28 @@ Todos:
   - [x] Cool color changing entries
 - [x] Create Journal Entry component 
 - [X] Put components in separate files
-- [x] make pages component, move showEntry definition onto App, pageView state *NEXT*
+- [x] make pages component, move showEntry definition onto App, pageView state 
+- [x] Style Nav OffCanvas
+- [x] Data Model
+  - [x] Test seed file
+  - [x] Add image table
+  - [x] Discuss Data Model
+  - [x] Create model.py
+  - [x] Add methods to dictionary-ify results to be JSON-ified
+
 - [ ] Expand Login component
   - [x] Style component
   - [ ] Add OAuth
   - [ ] Make entries page show something else when viewing Login
+  - [ ] Make fetch request to log user in
 - [ ] Change Logout component to button in nav menu 
   - [ ] Only visible when logged in
   - [ ] Actually logs user out
 - [ ] DON'T FORGET to fix keys TODO
-- [x] Style Nav OffCanvas
-- [ ] Data Model
-  - [ ]Test seed file
-  - [x] Add image table
-  - [x] Discuss Data Model
-  - [x] Create model.py
-  - [ ]Add methods to dictionary-ify results to be JSON-ified
-- [ ] Create mock data that is also journal of progress (using commemorative photos
+- [ ] Create mock data that is also journal of progress (using commemorative photos)
 - [ ] Create to_dict mixin for model?
+- [ ] Use sample data from db instead of mock data  (hook database to server) *NEXT*
+
 
 Book
   Pages
