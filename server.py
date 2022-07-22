@@ -5,7 +5,7 @@ from mockData import kats_chapter, trews_chapter
 
 app = Flask(__name__)
 
-app.secret_key ="stringitystring"
+app.secret_key = "stringitystring"
 
 @app.route("/")
 def homepage():

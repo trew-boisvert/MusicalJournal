@@ -52,7 +52,8 @@ Todos:
   - [x] Style component
   - [ ] Add OAuth
   - [ ] Make entries page show something else when viewing Login
-  - [ ] Make fetch request to log user in
+  - [x] Make fetch request to log user in
+    - [ ] add user_id to local storage 
 - [ ] Change Logout component to button in nav menu 
   - [ ] Only visible when logged in
   - [ ] Actually logs user out
@@ -60,6 +61,7 @@ Todos:
 - [ ] Create mock data that is also journal of progress (using commemorative photos)
 - [ ] Create to_dict mixin for model?
 - [ ] Use sample data from db instead of mock data  (hook database to server) *NEXT*
+- [ ] Consider how to incorporate advice from code review
 
 
 Book
